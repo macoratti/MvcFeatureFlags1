@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Export to Excel";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h2>@ViewData["Title"]</h2>
+
+    <p>This view demonstrates the export of a list of products to Excel.</p>
+
+    <p>To export the list to Excel, follow these steps:</p>
+
+    <ol>
+        <li>Click on the "Export to Excel" button.</li>
+        <li>Choose the location where you want to save the Excel file.</li>
+        <li>Open the saved Excel file to view the exported data.</li>
+    </ol>
+
+    <p>The exported Excel file will contain information about the products, including their names, prices, and other details.</p>
+
+    <p>Thank you for using our export feature!</p>
+
+    <!-- You can add more content or formatting as needed. -->
+
+    <form method="post" action="/Product/ExportToExcel">
+        <button type="submit">Export to Excel</button>
+    </form>
+</body>
+</html>
